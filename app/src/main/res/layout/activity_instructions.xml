@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leafo3.main.InstructionsActivity"
+    android:background="@color/button_green">
+
+    <ImageButton
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_delete"
+        android:background="@android:color/transparent"
+        android:id="@+id/activity_inst_got_it"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/activity_inst_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+
+    <LinearLayout
+        android:id="@+id/activity_inst_dots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

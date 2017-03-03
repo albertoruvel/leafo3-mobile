@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leafo3.main.PhotoActivity">
+
+    <ImageView
+        android:layout_marginTop="10dp"
+        android:id="@+id/activity_photo_picture_image_view"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/activity_photo_picture_image_view"
+        android:id="@+id/layout_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:hint="Type a title for this leaf"
+            android:id="@+id/activity_photo_title"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/editTextStyle"/>
+
+        <EditText
+            android:hint="Any comments?"
+            android:id="@+id/activity_photo_comment"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:layout_height="wrap_content"
+            style="@style/editTextStyle"/>
+
+        <Button
+            android:id="@+id/activity_photo_send_button"
+            android:text="Send"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mainButtonStyle"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

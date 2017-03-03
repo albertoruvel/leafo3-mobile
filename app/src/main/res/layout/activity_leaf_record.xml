@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leafo3.main.LeafRecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/activity_leaf_record_map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <fragment
+            android:id="@+id/activity_leaf_record_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"
+            class="com.google.android.gms.maps.MapFragment" />
+
+        <ProgressBar
+            android:id="@+id/activity_leaf_record_map_progress"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/activity_leaf_record_map_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Spinner
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/activity_leaf_record_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/activity_leaf_record_refresh_layout"
+            android:layout_below="@id/activity_leaf_record_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/activity_record_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:scrollbars="vertical"/>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/activity_leaf_record_list_progress"/>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/activity_leaf_record_button_layout"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:textColor="@color/green"
+                        android:layout_gravity="center"
+                        android:text="No leafs found"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <Button
+                        android:id="@+id/activity_leaf_record_create_leaf"
+                        android:text="I got some leafs to go!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/activity_record_no_leafs_text_view"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/green_darker"
+        android:textSize="20dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="You haven\'t registered any leafs yet =("
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</RelativeLayout>

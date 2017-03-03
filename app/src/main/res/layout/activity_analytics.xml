@@ -1,0 +1,11 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leafo3.main.AnalyticsActivity">
+
+    <lecho.lib.hellocharts.view.hack.HackyViewPager
+        android:id="@+id/activity_analytics_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.leafo3.main.AnalyticsActivity"/>
+</RelativeLayout>

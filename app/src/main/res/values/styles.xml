@@ -1,0 +1,73 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:editTextStyle">@style/editTextStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/ButtonLeafO3</item>-->
+        <item name="android:imageButtonStyle">@style/ImageButtonLeafO3</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarLeafO3</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/leafo3_list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/leafo3_activated_background_holo_light</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/leafo3_fastscroll_thumb_holo</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_darker</item>
+        <item name="toolbarStyle">@style/toolbarStyle</item>
+        <item name="drawerArrowStyle">@style/drawerArrowStyle</item>
+    </style>
+
+    <style name="drawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+
+    <style name="toolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/green</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="AppThemeNoTitle" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <!--<item name="android:editTextStyle">@style/editTextStyle</item>-->
+        <!--<item name="android:buttonStyle">@style/ButtonLeafO3</item>-->
+        <item name="android:imageButtonStyle">@style/ImageButtonLeafO3</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarLeafO3</item>
+        <item name="android:listChoiceBackgroundIndicator">@drawable/leafo3_list_selector_holo_light</item>
+        <item name="android:activatedBackgroundIndicator">@drawable/leafo3_activated_background_holo_light</item>
+        <item name="android:fastScrollThumbDrawable">@drawable/leafo3_fastscroll_thumb_holo</item>
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/green_darker</item>
+        <item name="drawerArrowStyle">@style/drawerArrowStyle</item>
+        <item name="android:toolbarStyle">@style/toolbarStyle</item>
+    </style>
+
+    <style name="editTextStyle" parent="android:style/Widget.EditText">
+        <item name="android:background">@drawable/leafo3_edit_text_holo_light</item>
+        <item name="android:textColorHighlight">#99358234</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColorHint">@color/green</item>
+        <item name="android:textSelectHandleLeft">@drawable/leafo3_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/leafo3_text_select_handle_right</item>
+        <item name="android:textSelectHandle">@drawable/leafo3_text_select_handle_middle</item>
+    </style>
+
+    <style name="buttonStyle" parent="android:style/Widget.Button">
+        <item name="android:background">@drawable/leafo3_btn_default_holo_light</item>
+    </style>
+
+    <style name="ImageButtonLeafO3" parent="android:style/Widget.ImageButton">
+        <item name="android:background">@drawable/leafo3_btn_default_holo_light</item>
+    </style>
+
+    <style name="mainButtonStyle" parent="android:style/Widget.Button">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:textColor">@color/green_darker</item>
+    </style>
+
+    <style name="ProgressBarLeafO3" parent="android:style/Widget.ProgressBar">
+        <item name="android:progressDrawable">@drawable/leafo3_progress_horizontal_holo_light</item>
+        <item name="android:indeterminateDrawable">@drawable/leafo3_progress_indeterminate_horizontal_holo_light</item>
+    </style>
+</resources>

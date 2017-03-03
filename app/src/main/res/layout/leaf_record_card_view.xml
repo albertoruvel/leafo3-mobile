@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/leaf_record_card_view_image"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            android:layout_marginRight="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/leaf_record_card_view_data_layout"
+            android:layout_toRightOf="@id/leaf_record_card_view_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/leaf_record_card_view_title"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Leaf title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/leaf_record_card_view_comment"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="This is the leaf comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/leaf_record_card_view_iso"
+                android:text="ISO Code: mx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/leaf_record_card_view_damage_data_layout"
+            android:layout_toRightOf="@id/leaf_record_card_view_image"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/leaf_record_card_view_damage"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Damage: 17%"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/leaf_record_card_view_percentage"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Class: 2"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight=".5"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/leaf_record_card_view_divider"
+            android:layout_above="@id/leaf_record_card_view_damage_data_layout"
+            android:layout_toRightOf="@id/leaf_record_card_view_image"
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="1px"/>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
